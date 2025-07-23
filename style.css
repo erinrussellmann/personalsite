@@ -1,0 +1,146 @@
+/* Add you CSS here */
+
+/* Profile Card Styles */
+.profile-card {
+  /* Center the card */
+  max-width: 320px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #ffe0b2; /* Light orange background */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* Profile image style */
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+/* Name style */
+.profile-card h1 {
+  font-size: 1.5em;
+  margin: 0 0 8px 0;
+}
+
+/* Description style */
+.profile-card p {
+  color: #555;
+  margin-bottom: 16px;
+}
+
+/* Social links style */
+.profile-links a {
+  text-decoration: none;
+  color: #3498db;
+  margin: 0 8px;
+  font-size: 1em;
+}
+
+/* Add a box around each section */
+section {
+  border: 1px solid #cccccc; /* Light gray border around each section */
+  border-radius: 10px;       /* Rounded corners for a softer look */
+  padding: 20px;             /* Space inside the box */
+  margin: 24px auto;         /* Space outside the box and center it */
+  max-width: 700px;          /* Limit the width for better readability */
+  background: #fafbfc;       /* Slightly different background color */
+}
+
+/* Navigation Bar Styles */
+nav {
+  width: 100%; /* Make the nav bar fill the top */
+  background: #b4a7e7; /* Periwinkle color */
+  margin-bottom: 24px; /* Space below the nav bar */
+}
+
+/* Remove bullet points and arrange links horizontally */
+nav ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Arrange items in a row */
+  justify-content: center; /* Center the links horizontally */
+}
+
+/* Style each navigation link as a box */
+nav ul li {
+  margin: 0 8px; /* Space between each link box */
+}
+
+/* Style the links inside the navigation bar */
+nav ul li a {
+  display: block;
+  padding: 10px 18px;
+  border: 1px solid #7c5dc7; /* Deep purple border */
+  border-radius: 8px;
+  background: #ede7f6; /* Light periwinkle for link background */
+  color: #4b2067; /* Deep purple text */
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+/* Add a simple hover effect */
+nav ul li a:hover {
+  background: #d1c4e9; /* Slightly darker periwinkle on hover */
+}
+
+/* Center the footer at the bottom of the page, but not fixed */
+footer {
+  text-align: center;      /* Center the text */
+  padding: 6px 0;          /* Make the footer bar thinner */
+  background: #f0f4f8;     /* Match the navigation bar background */
+  position: static;        /* Footer is not fixed, stays at the bottom of content */
+  width: 100%;             /* Make the footer span the whole page */
+  z-index: 100;
+}
+
+/* Set the background color of the entire webpage to light yellow */
+body {
+  /* Set the font for the whole page to Georgia */
+  font-family: Georgia, serif;
+  /* ...existing code... */
+  background: #fffde7; /* Very light yellow */
+  padding-bottom: 0;
+}
+
+/* Add a box around each section with different shades of yellow */
+/* Hero Section */
+#hero {
+  background: #fff9c4; /* Light yellow */
+  color: #6d4c00;      /* Dark gold-brown for good contrast */
+  text-align: center;  /* Center the text in the hero section */
+}
+
+/* Bio Section */
+#bio {
+  background: #fff59d; /* Slightly deeper yellow */
+  color: #5d4037;      /* Deep brown for readability */
+  text-align: center;  /* Center the text in the bio section */
+}
+
+/* Skills Section */
+#skills {
+  background: #ffe082; /* Another shade of yellow */
+  color: #4e342e;      /* Rich brown for contrast */
+  text-align: center;  /* Center the text in the skills section */
+}
+
+/* Projects Section */
+#projects {
+  background: #ffecb3; /* Another light yellow */
+  color: #6d4c41;      /* Medium brown for good contrast */
+  text-align: center;  /* Center the text in the projects section */
+}
+
+/* Contact Section */
+#contact {
+  background: #ffe0b2; /* Soft orange-yellow */
+  color: #4e260e;      /* Deep orange-brown for readability */
+  text-align: center;  /* Center the text in the contact section */
+}
