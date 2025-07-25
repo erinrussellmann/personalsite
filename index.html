@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Viewport meta tag for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Personal Site</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navigation Bar -->
   <nav>
+    <!-- Mobile menu button (hamburger) -->
+    <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
     <!-- Navigation links to different sections of the page -->
-    <ul>
+    <ul class="nav-menu">
       <li><a href="#hero">Home</a></li>
       <li><a href="#bio">Bio</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -23,7 +27,7 @@
     <!-- Profile Card -->
     <div class="profile-card">
       <!-- Profile image: The image is now inside the 'image' folder -->
-      <img src="img/selfie2.png" alt="Profile Picture" class="profile-img">
+      <img src="img/headshot.png" alt="Profile Picture" class="profile-img">
       <!-- Name -->
       <h1>Erin Russell-Mann</h1>
       <!-- Short description -->
@@ -49,22 +53,54 @@
     <h2>My Skills</h2>
     <!-- Using div and p tags instead of ul/li to remove bullet points -->
     <div>
-      <p>HTML</p>
-      <p>CSS</p>
-      <p>JavaScript (beginner)</p>
+      <p>Design and Prototyping</p>
+      <p>User Research and Testing</p>
+      <p>HTML, CSS, and Javascript</p>
       <!-- Add more skills as you learn -->
     </div>
   </section>
 
   <!-- Projects Section -->
   <section id="projects">
-    <!-- List or showcase of your projects (no bullet points) -->
+    <!-- List or showcase of your projects -->
     <h2>My Projects</h2>
-    <!-- Using div and p tags instead of ul/li to remove bullet points -->
+    <!-- Container for project cards -->
     <div>
-      <p>Project 1 - Coming Soon</p>
-      <p>Project 2 - Coming Soon</p>
-      <!-- Add more projects as you create them -->
+      <!-- Project Card 1 - Now using chatbot.png -->
+      <div class="project-card">
+        <!-- Project image -->
+        <img src="img/chatbot.png" alt="L'Oréal Smart Advisor" class="project-img">
+        <!-- Project title -->
+        <h3>L'Oréal Smart Advisor</h3>
+        <!-- Project description -->
+        <p>A user-friendly chatbot for L'Oréal focused on building routines and advice using real data from their products.</p>
+        <!-- Link to project -->
+        <a href="https://erinrussellmann.github.io/09-prj-loreal-routine-builder/" class="project-link" target="_blank">View Project</a>
+      </div>
+
+      <!-- Project Card 2 - Now using nasa.png -->
+      <div class="project-card">
+        <!-- Project image -->
+        <img src="img/nasa.png" alt="NASA Space Explorer" class="project-img">
+        <!-- Project title -->
+        <h3>NASA Space Explorer</h3>
+        <!-- Project description -->
+        <p>A webpage that utilizes real-time data from NASA's APIs to collect satellite images by date.</p>
+        <!-- Link to project -->
+        <a href="https://erinrussellmann.github.io/07-nasa-space-explorer/" class="project-link" target="_blank">View Project</a>
+      </div>
+
+      <!-- Project Card 3 - Now using 477.png -->
+      <div class="project-card">
+        <!-- Project image -->
+        <img src="img/477.png" alt="Capstone Project" class="project-img">
+        <!-- Project title -->
+        <h3>Capstone Project</h3>
+        <!-- Project description -->
+        <p>A research project focused on reducing cognitive load in office environments.</p>
+        <!-- Link to project -->
+        <a href="https://docs.google.com/document/d/1fGKVb_6phllIAbglWrQ6S4E_FDKiCFi71nO4Rs1Arbc/edit?usp=sharing" class="project-link" target="_blank">View Project</a>
+      </div>
     </div>
   </section>
 
@@ -86,5 +122,14 @@
     <!-- Simple footer text -->
     <p>&copy; 2025 [Erin Russell-Mann]. All rights reserved.</p>
   </footer>
+
+  <!-- Add JavaScript for mobile menu -->
+  <script>
+    // Simple function to toggle mobile menu
+    function toggleMenu() {
+      const navMenu = document.querySelector('.nav-menu');
+      navMenu.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>

@@ -10,6 +10,13 @@
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   text-align: center;
+  /* Add smooth transition for hover effects */
+  transition: transform 0.3s ease;
+}
+
+/* Profile card hover effect */
+.profile-card:hover {
+  transform: scale(1.05); /* Make it slightly bigger on hover */
 }
 
 /* Profile image style */
@@ -19,6 +26,13 @@
   border-radius: 50%; /* Makes the image round */
   object-fit: cover;
   margin-bottom: 16px;
+  /* Add smooth transition for image */
+  transition: transform 0.3s ease;
+}
+
+/* Profile image hover effect */
+.profile-img:hover {
+  transform: scale(1.1); /* Make image bigger on hover */
 }
 
 /* Name style */
@@ -43,12 +57,53 @@
 
 /* Add a box around each section */
 section {
-  border: 1px solid #cccccc; /* Light gray border around each section */
-  border-radius: 10px;       /* Rounded corners for a softer look */
-  padding: 20px;             /* Space inside the box */
-  margin: 24px auto;         /* Space outside the box and center it */
-  max-width: 700px;          /* Limit the width for better readability */
-  background: #fafbfc;       /* Slightly different background color */
+  width: 100%; /* Take up full width of the page */
+  padding: 40px 20px; /* Add more vertical padding, keep horizontal padding */
+  margin: 0; /* Remove any margin */
+  box-sizing: border-box; /* Include padding in width calculation */
+  /* Add smooth transition for hover effects */
+  transition: all 0.3s ease;
+}
+
+/* Section hover effect - make content pop out */
+section:hover {
+  transform: translateY(-5px); /* Move section up slightly */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add soft shadow */
+}
+
+/* Add alternating background colors for visual flow */
+section:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray background for even sections */
+}
+
+section:nth-child(odd) {
+  background-color: #ffffff; /* White background for odd sections */
+}
+
+/* Center content within sections but keep full width */
+section h2 {
+  text-align: center; /* Center the headings */
+  margin-bottom: 20px;
+  /* Add transition for heading text */
+  transition: color 0.3s ease;
+}
+
+/* Make headings change color on section hover */
+section:hover h2 {
+  color: #8d6e63; /* Change to warm brown color that matches the page theme */
+}
+
+section p {
+  max-width: 800px; /* Limit text width for better readability */
+  margin: 0 auto 15px auto; /* Center the paragraphs */
+  text-align: center; /* Center align text */
+  /* Add transition for paragraph text */
+  transition: transform 0.3s ease;
+}
+
+/* Make paragraphs slightly bigger on section hover */
+section:hover p {
+  transform: scale(1.02); /* Make text slightly bigger */
 }
 
 /* Navigation Bar Styles */
@@ -98,6 +153,13 @@ footer {
   position: static;        /* Footer is not fixed, stays at the bottom of content */
   width: 100%;             /* Make the footer span the whole page */
   z-index: 100;
+  /* Add transition for footer */
+  transition: background-color 0.3s ease;
+}
+
+/* Footer hover effect */
+footer:hover {
+  background-color: #e6e6e6; /* Slightly darker on hover */
 }
 
 /* Set the background color of the entire webpage to light yellow */
@@ -143,4 +205,285 @@ body {
   background: #ffe0b2; /* Soft orange-yellow */
   color: #4e260e;      /* Deep orange-brown for readability */
   text-align: center;  /* Center the text in the contact section */
+}
+
+/* Basic styles for the whole page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Navigation menu styles */
+.nav-menu {
+  list-style: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display links in a row */
+  flex-direction: row;
+}
+
+/* Navigation links */
+.nav-menu li {
+  margin-right: 20px;
+}
+
+.nav-menu li:last-child {
+  margin-right: 0;
+}
+
+/* Hide mobile menu button by default */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Profile card styles */
+.profile-card {
+  text-align: center;
+  padding: 20px;
+  /* Add smooth transition for hover effects */
+  transition: transform 0.3s ease;
+}
+
+/* Profile card hover effect */
+.profile-card:hover {
+  transform: scale(1.05); /* Make it slightly bigger on hover */
+}
+
+/* Profile image styles */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Make image round */
+  object-fit: cover;
+  /* Add smooth transition for image */
+  transition: transform 0.3s ease;
+}
+
+/* Profile image hover effect */
+.profile-img:hover {
+  transform: scale(1.1); /* Make image bigger on hover */
+}
+
+/* Section styles - make them extend across full page */
+section {
+  width: 100%; /* Take up full width of the page */
+  padding: 40px 20px; /* Add more vertical padding, keep horizontal padding */
+  margin: 0; /* Remove any margin */
+  box-sizing: border-box; /* Include padding in width calculation */
+  /* Add smooth transition for hover effects */
+  transition: all 0.3s ease;
+}
+
+/* Section hover effect - make content pop out */
+section:hover {
+  transform: translateY(-5px); /* Move section up slightly */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add soft shadow */
+}
+
+/* Add alternating background colors for visual flow */
+section:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray background for even sections */
+}
+
+section:nth-child(odd) {
+  background-color: #ffffff; /* White background for odd sections */
+}
+
+/* Center content within sections but keep full width */
+section h2 {
+  text-align: center; /* Center the headings */
+  margin-bottom: 20px;
+  /* Add transition for heading text */
+  transition: color 0.3s ease;
+}
+
+/* Make headings change color on section hover */
+section:hover h2 {
+  color: #8d6e63; /* Change to warm brown color that matches the page theme */
+}
+
+section p {
+  max-width: 800px; /* Limit text width for better readability */
+  margin: 0 auto 15px auto; /* Center the paragraphs */
+  text-align: center; /* Center align text */
+  /* Add transition for paragraph text */
+  transition: transform 0.3s ease;
+}
+
+/* Make paragraphs slightly bigger on section hover */
+section:hover p {
+  transform: scale(1.02); /* Make text slightly bigger */
+}
+
+/* Footer styles */
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  width: 100%; /* Take up full width */
+  margin: 0; /* Remove any margin */
+  box-sizing: border-box;
+  /* Add transition for footer */
+  transition: background-color 0.3s ease;
+}
+
+/* Footer hover effect */
+footer:hover {
+  background-color: #e6e6e6; /* Slightly darker on hover */
+}
+
+/* Skills Section - make skills appear as cards */
+#skills div {
+  display: flex; /* Arrange skills in a row */
+  flex-wrap: wrap; /* Allow skills to wrap to new lines */
+  justify-content: center; /* Center the skill cards */
+  gap: 15px; /* Space between skill cards */
+  margin-top: 20px; /* Space above the skills */
+}
+
+/* Style each skill as a card */
+#skills p {
+  background: #ede7f6; /* Light periwinkle background to match nav */
+  color: #4b2067; /* Deep purple text to match nav */
+  padding: 12px 20px; /* Padding inside each skill card */
+  border-radius: 25px; /* Rounded corners */
+  border: 2px solid #7c5dc7; /* Deep purple border to match nav */
+  font-weight: bold; /* Make text bold */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  margin: 0; /* Remove default margin */
+  max-width: none; /* Remove width limit for skills */
+  text-align: center; /* Center text in each card */
+  /* Add smooth transition for hover effects */
+  transition: all 0.3s ease;
+}
+
+/* Skill card hover effect */
+#skills p:hover {
+  transform: scale(1.1) rotate(2deg); /* Make bigger and slightly rotate */
+  background: #d1c4e9; /* Slightly darker periwinkle on hover to match nav */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Bigger shadow on hover */
+}
+
+/* Projects Section - make projects appear as cards */
+#projects div {
+  display: flex; /* Arrange project cards in a row */
+  flex-wrap: wrap; /* Allow cards to wrap to new lines */
+  justify-content: center; /* Center the project cards */
+  gap: 20px; /* Space between project cards */
+  margin-top: 20px; /* Space above the projects */
+}
+
+/* Style each project as a card */
+.project-card {
+  background: #ede7f6; /* Light periwinkle background to match nav */
+  border: 2px solid #7c5dc7; /* Deep purple border to match nav */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Padding inside each card */
+  max-width: 300px; /* Limit card width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  text-align: center; /* Center all text in card */
+  /* Add smooth transition for hover effects */
+  transition: all 0.3s ease;
+}
+
+/* Project card hover effect */
+.project-card:hover {
+  transform: scale(1.05); /* Make card bigger on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Bigger shadow on hover */
+}
+
+/* Project image style - now for actual img tags */
+.project-img {
+  width: 100%; /* Take full width of card */
+  height: 150px; /* Fixed height for all images */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 15px; /* Space below image */
+  object-fit: cover; /* Make sure image covers the area nicely */
+}
+
+/* Project title style */
+.project-card h3 {
+  color: #4b2067; /* Deep purple text to match nav */
+  margin: 0 0 10px 0; /* Remove default margin, add bottom margin */
+  font-size: 1.2em; /* Make title slightly bigger */
+}
+
+/* Project description style */
+.project-card p {
+  color: #4b2067; /* Deep purple text to match nav */
+  margin: 0 0 15px 0; /* Remove default margin, add bottom margin */
+  max-width: none; /* Remove width limit for project descriptions */
+}
+
+/* Project link style */
+.project-link {
+  background: #7c5dc7; /* Deep purple background */
+  color: white; /* White text */
+  padding: 8px 16px; /* Padding for button look */
+  border-radius: 20px; /* Rounded button */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make text bold */
+  /* Add smooth transition for hover effects */
+  transition: background 0.3s ease;
+}
+
+/* Project link hover effect */
+.project-link:hover {
+  background: #5e4ba1; /* Darker purple on hover */
+}
+
+/* Responsive styles for screens smaller than 600px */
+@media (max-width: 600px) {
+  /* Show mobile menu button */
+  .mobile-menu-btn {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Stack navigation links vertically */
+  .nav-menu {
+    flex-direction: column;
+    display: none; /* Hide menu by default on mobile */
+  }
+
+  /* Show menu when 'show' class is added */
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+
+  /* Make profile image smaller */
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Reduce padding for sections on mobile */
+  section {
+    padding: 20px 15px;
+  }
+
+  /* Reduce hover effects on mobile for better performance */
+  section:hover {
+    transform: translateY(-2px); /* Smaller movement on mobile */
+  }
+}
+  /* Reduce hover effects on mobile for better performance */
+  section:hover {
+    transform: translateY(-2px); /* Smaller movement on mobile */
+  }
 }
