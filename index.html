@@ -130,6 +130,11 @@
       const navMenu = document.querySelector('.nav-menu');
       navMenu.classList.toggle('show');
     }
+
+    // Scroll to top when the page loads
+    window.onload = function() {
+      window.scrollTo(0, 0);
+    };
   </script>
 </body>
 </html>
